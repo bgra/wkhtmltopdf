@@ -89,7 +89,7 @@ bool ConverterPrivate::convert() {
 	convertionDone=false;
 	beginConvert();
 	while (!convertionDone)
-		qApp->processEvents(QEventLoop::WaitForMoreEvents | QEventLoop::AllEvents);
+		qApp->processEvents();
 	return !error;
 }
 
